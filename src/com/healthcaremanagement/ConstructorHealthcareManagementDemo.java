@@ -27,6 +27,30 @@ public class ConstructorHealthcareManagementDemo {
                     System.out.println("person created successfully");
                     break;
 
+                case 2:
+                    System.out.println("doctor created successfully");
+                    break;
+
+                case 3:
+                    System.out.println("hospital created successfully");
+                    break;
+
+                case 4:
+                    System.out.println("department created successfully");
+                    break;
+
+                case 5:
+                    System.out.println("appointment created successfully");
+                    break;
+
+                case 6:
+                    System.out.println("prescription created successfully");
+                    break;
+
+                case 7:
+                    System.out.println("bill generated successfully");
+                    break;
+
                 default:
                     System.out.println("please enter valid input");
                     break;

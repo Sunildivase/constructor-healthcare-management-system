@@ -13,9 +13,20 @@ public class Person {
     private String alternateMobile;
     private String address;
 
-    public Person(int personId){
+    public Person(int personId , String type , String firstName , String lastName ,int age , String gender, String contactNo , String alternateMobile , String address){
         this.personId= personId;
+        this.type = type;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.gender = gender;
+        this.contactNo = contactNo;
+        this.alternateMobile = alternateMobile;
+        this.address = address;
+
     }
+
+
 
     @Override
     public String toString() {

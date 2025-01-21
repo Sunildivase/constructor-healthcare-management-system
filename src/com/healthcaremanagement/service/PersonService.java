@@ -23,12 +23,34 @@ public class PersonService {
         System.out.println("please enter person id");
         int personId = Integer.parseInt(scanner.nextLine());
 
+        System.out.println("please enter type");
+        String type = scanner.nextLine();
 
+        System.out.println("please enter first name");
+        String firstName = scanner.nextLine();
+
+        System.out.println("please enter last name");
+        String lastName = scanner.nextLine();
+
+        System.out.println("please enter age ");
+        int age = Integer.parseInt(scanner.nextLine());
+
+        System.out.println("please enter gender");
+        String gender = scanner.nextLine();
+
+        System.out.println("please enter contactNo");
+        String contactNo = scanner.nextLine();
+
+        System.out.println("please enter alternate Mobile");
+        String alternateMobile = scanner.nextLine();
+
+        System.out.println("please enter address");
+        String address = scanner.nextLine();
 
         //we can optimize the code by using constructor
         //we can remove the setter methods for optimization
 
-        Person person = new Person(personId);
+        Person person = new Person(personId,type,firstName,lastName,age,gender,contactNo,alternateMobile,address);
         persons.put(String.valueOf(1),person);
     }
 
