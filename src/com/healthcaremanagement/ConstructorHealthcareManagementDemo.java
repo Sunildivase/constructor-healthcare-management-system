@@ -1,6 +1,8 @@
 package com.healthcaremanagement;
 
+import com.healthcaremanagement.service.DepartmentService;
 import com.healthcaremanagement.service.DoctorService;
+import com.healthcaremanagement.service.HospitalService;
 import com.healthcaremanagement.service.PersonService;
 
 import java.util.Scanner;
@@ -42,10 +44,16 @@ public class ConstructorHealthcareManagementDemo {
                     break;
 
                 case 3:
+                    HospitalService hospitalService = new HospitalService();
+                    hospitalService.createHospital();
+                    hospitalService.displayHospital();
                     System.out.println("hospital created successfully");
                     break;
 
                 case 4:
+                    DepartmentService departmentService = new DepartmentService();
+                    departmentService.createDepartment();
+                    departmentService.displayDepartment();
                     System.out.println("department created successfully");
                     break;
 

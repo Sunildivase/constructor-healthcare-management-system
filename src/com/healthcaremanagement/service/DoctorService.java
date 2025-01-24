@@ -15,7 +15,7 @@ public class DoctorService {
         System.out.println(doctor);
     }
 
-    public void createDoctor(){
+    public Doctor createDoctor(){
 
         System.out.println("please enter doctor id");
         int doctorId = Integer.parseInt(scanner.nextLine());
@@ -43,6 +43,7 @@ public class DoctorService {
 
         Doctor doctor = new Doctor(doctorId,firstName,lastName,age,gender,contactNo,speciality,experience);
         doctors.put(String.valueOf(1),doctor);
+        return doctor;
     }
     public void displayDoctor(){
         System.out.println("doctor: "+doctors);

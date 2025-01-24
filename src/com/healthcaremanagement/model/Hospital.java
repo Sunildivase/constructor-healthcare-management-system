@@ -17,6 +17,7 @@ public class Hospital {
         this.emailId = emailId;
     }
 
+
     @Override
     public String toString() {
         return "Hospital{" +

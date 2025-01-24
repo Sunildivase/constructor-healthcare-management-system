@@ -18,7 +18,7 @@ public class PersonService {
         System.out.println(person);
     }
 
-    public void createPerson() {
+    public Person createPerson() {
 
         System.out.println("please enter person id");
         int personId = Integer.parseInt(scanner.nextLine());
@@ -52,6 +52,7 @@ public class PersonService {
 
         Person person = new Person(personId,type,firstName,lastName,age,gender,contactNo,alternateMobile,address);
         persons.put(String.valueOf(1),person);
+        return person;
     }
 
     public void displayPerson(){
