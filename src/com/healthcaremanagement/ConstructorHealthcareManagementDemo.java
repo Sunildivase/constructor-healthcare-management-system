@@ -1,9 +1,6 @@
 package com.healthcaremanagement;
 
-import com.healthcaremanagement.service.DepartmentService;
-import com.healthcaremanagement.service.DoctorService;
-import com.healthcaremanagement.service.HospitalService;
-import com.healthcaremanagement.service.PersonService;
+import com.healthcaremanagement.service.*;
 
 import java.util.Scanner;
 
@@ -58,14 +55,23 @@ public class ConstructorHealthcareManagementDemo {
                     break;
 
                 case 5:
+                    AppointmentService appointmentService = new AppointmentService();
+                    appointmentService.createAppointment();
+                    appointmentService.displayAppointment();
                     System.out.println("appointment created successfully");
                     break;
 
                 case 6:
+                    PrescriptionService prescriptionService = new PrescriptionService();
+                    prescriptionService.createPrescription();
+                    prescriptionService.displayPrescription();
                     System.out.println("prescription created successfully");
                     break;
 
                 case 7:
+                    BillingService billingService = new BillingService();
+                    billingService.createBilling();
+                    billingService.displayBilling();
                     System.out.println("bill generated successfully");
                     break;
 
